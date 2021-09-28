@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.bg-vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#hole {
+    max-width: 400px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.75;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153, 153, 153, 1);
+
+
+}
+
+#result {
+    text-align: right;
+    height: 130px;
+    line-height: 95px;
+    padding: 16px 8px;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#buttons {
+    display: grid;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid#999;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#buttons>div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 100px;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#equal {
+    background-color: gold;
+    color: white;
+
+}
+
+#equal:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.35s ease-in-out;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.35s ease-in-out;
+}
+
+pre {
+    margin: 20px;
+}
